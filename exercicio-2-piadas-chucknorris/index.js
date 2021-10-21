@@ -11,5 +11,6 @@ app.set('views', './views');
 const PORT = 3000;
 
 app.get('/categories', categoriesController.listCategories);
+app.get('/', categoriesController.redirectCategories);
 
 app.listen(PORT, () => console.log('Exercícios do bloco 30 - Chuck Norris parte I'));

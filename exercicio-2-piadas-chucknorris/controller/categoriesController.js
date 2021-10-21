@@ -5,4 +5,8 @@ const listCategories = async (_req, res) => {
   return res.status(200).render('categories/index.ejs', { categories });
 };
 
-module.exports = { listCategories };
+const redirectCategories = async (_req, res) => {
+  return res.redirect('/categories');
+};
+
+module.exports = { listCategories, redirectCategories };
